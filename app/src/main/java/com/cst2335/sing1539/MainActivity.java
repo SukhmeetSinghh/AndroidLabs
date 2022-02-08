@@ -1,45 +1,50 @@
 package com.cst2335.sing1539;
 
-import static com.cst2335.sing1539.R.id.togglebutton;
-
 import androidx.appcompat.app.AppCompatActivity;
 
-
-import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.CompoundButton;
-import android.widget.GridLayout;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.Switch;
-import android.widget.Toast;
-
-import com.google.android.material.snackbar.Snackbar;
+import android.util.Log;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    //LinearLayout mainland;
+
+    private EditText userEmail, userPassword;
+    static final String TAG = "MainActivity";
+    private SharedPreferences.Editor editor;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_grid);
+        setContentView(R.layout.activity_main);
 
-    public void display_snack (View v) {
+        userEmail = findViewById(R.id.email);
+        userPassword = findViewById(R.id.password);
 
-        @SuppressLint("UseSwitchCompatOrMaterialCode") Switch toggle = (Switch) findViewById(togglebutton);
+        final Button loginButton = findViewById(R.id.button);
+        loginButton.setOnClickListener(view -> {
+            Intent goToProfile = new Intent(MainActivity.this, ProfileActivity.class);
+            goToProfile.putExtra("EMAIL", userEmail.getText().toString());
 
-        toggle.setOnCheckedChangeListener((compoundButton, isChecked) -> {
-            Snackbar snack;
-            if (isChecked) {
-                snack = Snackbar.make(toggle, "The switch is now followed by On", Snackbar.LENGTH_LONG);
+            Log.e(TAG, "email" + userEmail.getText().toString());
 
-            }
-            else {
-                snack = Snackbar.make(toggle, "The switch is now followed by off", Snackbar.LENGTH_LONG);
+            startActivity(goToProfile);
+        });
+    }
 
-            }
-            snack.setAction("Undo", click -> compoundButton.setChecked(false));
-            snack.show();
+    @Override
+    public void onStart(){
+        super.onStart();
 
-        })
-        ;}}
+        SharedPreferences sharedPreferences = getSharedPreferences("sharedLoginPref", MODE_PRIVATE);
+        String uEmail = sharedPreferences.getString("userEmail", "");
+        String uPassword = sharedPreferences.getString("userPassword", "");
+
+        userEmail.setText(uEmail);
+        userPassword.setText(uPassword);
+    }
+
+}
