@@ -14,10 +14,12 @@ import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class ProfileActivity extends AppCompatActivity {
     ImageButton button;
+    Button chatRoom;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +27,9 @@ public class ProfileActivity extends AppCompatActivity {
 
         button= findViewById(R.id.button);
         button.setOnClickListener(view -> dispatchTakePictureIntent());
+        chatRoom = findViewById(R.id.ChatRoom);
+        chatRoom.setOnClickListener(view -> startActivity(new Intent(ProfileActivity.this, ChatRoomActivity.class)));
+
     }
     @SuppressLint("QueryPermissionsNeeded")
     private void dispatchTakePictureIntent() {

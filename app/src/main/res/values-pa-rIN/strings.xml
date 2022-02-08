@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name">ਐਂਡਰੌਇਡ ਲੈਬ</string>
-    <string name="gui">ਮੇਰੀ GUI ਤੇ ਦੇਖੋ</string>
-    <string name="click">ਇੱਥੇ ਕਲਿੱਕ ਕਰੋ</string>
-    <string name="check">ਇਸਨੂੰ ਦੇਖੋ!</string>
-    <string name="switon">ਸ਼ੁਰੂ/ਬੰਦ ਕਰੋ!</string>
-    <string name="type_here">ਇੱਥੇ ਟਾਈਪ ਕਰੋ</string>
-    <string name="TOAST_MESSAGE">ਵਧੇਰੇ ਜਾਣਕਾਰੀ ਲਈ ਇੱਥੇ ਕਲਿੱਕ ਕਰੋ</string>
-    <string name="switch2">Click here for more information</string>
-    <string name="undo">ਵਾਪਿਸ</string>
-    <string name="done">ਪੂਰਤੀ</string>
-    <string name="nation_flag">ਰਾਸ਼ਟਰ ਝੰਡਾ</string>
-    <drawable name="canadian">@drawable/flag</drawable>
+    <string name="enteremail" >ਆਪਣੀ ਈ-ਮੇਲ ਆਈਡੀ ਲਿਖੋ</string>
+    <string name="enterpassword" >ਆਪਣਾ ਪਾਸਵਰਡ ਲਿਖੋ: </string>
+    <string name="typeemail" >ਆਪਣੀ ਈ-ਮੇਲ ਆਈਡੀ ਲਿਖੋ</string>
+    <string name="login" >ਲੌਗਿਨ</string>
+    <string name="profile" >ਤੁਹਾਡੀ ਪ੍ਰੋਫਾਈਲ </string>
+    <string name="name" >ਤੁਹਾਡਾ ਨਾਮ </string>
+    <string name="entername" >Enter your name </string>
+    <string name="entemail" >ਆਪਣੀ ਈ-ਮੇਲ ਆਈਡੀ ਲਿਖੋ</string>
+    <string name="Email" >Your ਈ-ਮੇਲ ਆਈਡੀ </string>
+    <string name="picture" >ਤੁਹਾਡੀ ਫੋਟੋ </string>
+    <string name="clickpicture" >ਫੋਟੋ ਖਿੱਚਣ ਲਈ ਉਪਰਲੇ ਬਟਨ ਤੇ ਕਲਿਕ ਕਰੋ </string>
+    <string name="pic" >ਕੈਮਰੇ ਤੋਂ ਫੋਟੋ ਲਵੋ</string>
+    <string name="chatroom" >chatroom</string>
+    <string name="send_icon">sendIcon</string>
+    <string name="message">message</string>
+    <string name="recieve_icon">recieveIcon</string>
+    <string name="send">ਭੇਜੋ</string>
+    <string name="RECIEVER">ਪ੍ਰਾਪਤ</string>
+
 </resources>
