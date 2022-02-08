@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Android Labs</string>
-    <string name="hello_message">ਸਤਿ ਸ਼੍ਰੀ ਅਕਾਲ</string>
-    <string name="ButtonText">I\'m a button</string>
+
+    <string name="app_name">ਐਂਡਰੌਇਡ ਲੈਬ</string>
+    <string name="gui">ਮੇਰੀ GUI ਤੇ ਦੇਖੋ</string>
+    <string name="click">ਇੱਥੇ ਕਲਿੱਕ ਕਰੋ</string>
+    <string name="check">ਇਸਨੂੰ ਦੇਖੋ!</string>
+    <string name="switon">ਸ਼ੁਰੂ/ਬੰਦ ਕਰੋ!</string>
+    <string name="type_here">ਇੱਥੇ ਟਾਈਪ ਕਰੋ</string>
+    <string name="TOAST_MESSAGE">ਵਧੇਰੇ ਜਾਣਕਾਰੀ ਲਈ ਇੱਥੇ ਕਲਿੱਕ ਕਰੋ</string>
+    <string name="switch2">Click here for more information</string>
+    <string name="undo">ਵਾਪਿਸ</string>
+    <string name="done">ਪੂਰਤੀ</string>
+    <string name="nation_flag">ਰਾਸ਼ਟਰ ਝੰਡਾ</string>
+    <drawable name="canadian">@drawable/flag</drawable>
 </resources>
