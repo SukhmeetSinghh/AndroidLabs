@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Android Labs</string>
+    <string name="enteremail" >Enter your email address</string>
+    <string name="enterpassword" >Enter your password: </string>
+    <string name="typeemail" >Type your email here</string>
+    <string name="login" >Login</string>
+    <string name="profile" >Your Profile </string>
+    <string name="name" >Your Name: </string>
+    <string name="entername" >Enter your name </string>
+    <string name="entemail" >enter your email </string>
+    <string name="Email" >Your Email </string>
+    <string name="picture" >Your picture: </string>
+    <string name="clickpicture" >Click the button above to take a picture </string>
+    <string name="pic" >take a picture from camera </string>
+    <string name="chatroom" >chatroom</string>
+    <string name="send_icon">sendIcon</string>
+    <string name="message">message</string>
+    <string name="recieve_icon">recieveIcon</string>
+    <string name="send">send</string>
+    <string name="RECIEVER">Recieve</string>
+    <string name="type_here" translatable="false">typehere</string>
+
+</resources>
